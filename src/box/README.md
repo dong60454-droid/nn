@@ -47,19 +47,17 @@ python -m venv .venv
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-如果仓库未包含完整的 `requirements.txt`，可参考核心依赖：
-
-```
-gymnasium
-mujoco
-stable-baselines3
-pygame
-opencv-python
-numpy
-scipy
-matplotlib
-ruamel.yaml
-```
+如果仓库未包含完整的 `requirements.txt`，可参考以下稳定兼容的依赖版本：
+```text
+gymnasium==0.29.0
+mujoco==2.3.7
+stable-baselines3==2.0.0
+pygame==2.5.2
+opencv-python==4.8.1.78
+numpy==1.26.2
+scipy==1.11.4
+matplotlib==3.8.2
+ruamel.yaml==0.18.5
 
 3) 运行示例仿真（示例脚本名以仓库实际文件为准）：
 
