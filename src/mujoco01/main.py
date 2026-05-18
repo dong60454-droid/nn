@@ -52,6 +52,7 @@ def main():
                 print(f"加速度: {data.sensordata[0]:.2f}, {data.sensordata[1]:.2f}, {data.sensordata[2]:.2f}")
                 print(f"速度: {data.sensordata[3]:.2f}, {data.sensordata[4]:.2f}, {data.sensordata[5]:.2f}")
                 print(f"足部受力: {data.sensordata[6]:.2f}, {data.sensordata[7]:.2f}, {data.sensordata[8]:.2f}")
+                print(f"当前关节控制输出值: {target_ctrl:.2f}")
                 last_print_time = data.time
 
             v.sync()
